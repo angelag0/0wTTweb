@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>模組化元件展示</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Microsoft JhengHei', Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+    .redirect-link {
+      display: inline-block;
+      background: linear-gradient(45deg, #FFD700, #E6B800);
+      color: #000;
+      padding: 15px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 20px;
+      transition: all 0.3s ease;
+    }
+    .redirect-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <h1>模組化元件展示</h1>
+  <p>點擊下方連結查看完整的模組化元件展示</p>
+  <a href="/modular-all.html" class="redirect-link">查看所有模組化元件</a>
+  
+  <script>
+    // 自動重定向到 modular-all.html
+    setTimeout(() => {
+      window.location.href = '/modular-all.html';
+    }, 2000);
+  </script>
+</body>
+</html>
